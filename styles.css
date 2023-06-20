@@ -103,6 +103,7 @@ nav {
     height: 100px;
     background-color: #f8c2c2;
     overflow: hidden;
+    margin-top: 50px;
   }
 
   .moving-content {
