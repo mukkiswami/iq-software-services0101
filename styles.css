@@ -130,3 +130,17 @@ nav {
     0% { transform: translateX(0); }
     100% { transform: translateX(-100%); }
   }
+
+  .work-body{
+    margin-top: 20px;
+    
+  }
+  #work{
+    font-size: 50px;
+    text-align: center;
+  }
+  img{
+    text-align: left;
+    width: 600px;
+    height: 400px;
+  }
