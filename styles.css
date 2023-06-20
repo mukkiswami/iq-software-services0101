@@ -96,3 +96,36 @@ nav {
     opacity: 1;
     transform: translateY(-100%);
   }
+  /* Bar of moving contents */
+  .bar {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background-color: #f8c2c2;
+    overflow: hidden;
+  }
+
+  .moving-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    animation: moveContent 10s linear infinite;
+  }
+
+  .moving-content div {
+    flex: 1;
+    height: 100%;
+    background-color: #f8c2c2;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @keyframes moveContent {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+  }
