@@ -1,0 +1,64 @@
+header {
+    display: flex; /* Use flexbox to align elements */
+    justify-content: space-between;
+    align-items: center; /* Vertically align the logo and navbar */
+    background-color: #ffff;
+    color: #fff;
+  }
+  
+  .logo {
+    margin-left: 80px; /* Add spacing between the logo and navbar */
+  }
+
+nav {
+    /* background-color: #f2f2f2; */
+    color: #333;
+    text-align: left;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav ul li {
+    display: inline-block; /* Display the list items horizontally */
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  nav ul li a:hover {
+    color: #666; /* Change the link color on hover */
+  }
+  
+  h1{
+    margin-left: 80px;
+  }
+
+  .tab-button {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    /* background-color: #f2f2f2;
+    border: 1px solid #ccc; */
+    cursor: pointer;
+  }
+
+  .popup {
+    position: absolute;
+    display: none;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 10px;
+    z-index: 1;
+  }
+
+  .tab-button:hover .popup {
+    display: block;
+  }
