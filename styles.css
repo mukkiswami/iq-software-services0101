@@ -66,7 +66,7 @@ nav {
   .animated-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #f34e4e;
+    background-color: #ff5722;
     color: #111111;
     border: none;
     border-radius: 4px;
@@ -143,4 +143,22 @@ nav {
     text-align: left;
     width: 600px;
     height: 400px;
+  }
+
+  .box{
+    background-color: #ccc;
+    height: 400px;
+    width: 400px;
+    padding: 5%;
+
+  }
+
+  .work-title1{
+    margin: 10px;
+    color: #ff5722;
+    font-size: 40px;
+  }
+  .work-body2{
+    font-family: 'Courier New', Courier, monospace;
+    font-style: oblique;
   }
