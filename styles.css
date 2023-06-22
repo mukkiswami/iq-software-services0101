@@ -1,69 +1,75 @@
+/* Show navigation links when the hamburger menu is toggled */
+@media (max-width: 600px) {
+    nav ul.show {
+      display: block;
+    }
+  }
+  
+
+/* General Styles */
 header {
-    display: flex; /* Use flexbox to align elements */
+    display: flex;
     justify-content: space-between;
-    align-items: center; /* Vertically align the logo and navbar */
+    align-items: center;
     background-color: #ffff;
     color: #fff;
-  }
-  
-  .logo {
-    margin-left: 80px; /* Add spacing between the logo and navbar */
-  }
+}
+
+.logo {
+    margin-left: 80px;
+}
 
 nav {
-    /* background-color: #f2f2f2; */
     color: #333;
     text-align: left;
-  }
-  
-  nav ul {
+}
+
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-  }
+}
 
-  nav ul li {
-    display: inline-block; /* Display the list items horizontally */
+nav ul li {
+    display: inline-block;
     margin-right: 20px;
-  }
-  
-  nav ul li a {
+}
+
+nav ul li a {
     color: #333;
     text-decoration: none;
     font-size: 18px;
-  }
-  
-  nav ul li a:hover {
-    color: #666; /* Change the link color on hover */
-  }
-  
-  h1{
-    margin-left: 80px;
-  }
+}
 
-  .tab-button {
+nav ul li a:hover {
+    color: #666;
+}
+
+h1 {
+    margin-left: 80px;
+}
+
+.tab-button {
     position: relative;
     display: inline-block;
     padding: 10px 20px;
-    /* background-color: #f2f2f2;
-    border: 1px solid #ccc; */
     cursor: pointer;
-  }
+}
 
-  .popup {
+.popup {
     position: absolute;
     display: none;
     background-color: #f2f2f2;
     border: 1px solid #ccc;
     padding: 10px;
     z-index: 1;
-  }
+}
 
-  .tab-button:hover .popup {
+.tab-button:hover .popup {
     display: block;
-  }
+}
 
-  .animated-button {
+.animated-button {
     display: inline-block;
     padding: 10px 20px;
     background-color: #ff5722;
@@ -74,9 +80,9 @@ nav {
     position: relative;
     overflow: hidden;
     transition: transform 0.3s;
-  }
+}
 
-  .animated-button::before {
+.animated-button::before {
     content: "";
     position: absolute;
     top: 100%;
@@ -86,27 +92,27 @@ nav {
     background-color: rgba(0, 0, 0, 0.1);
     opacity: 0;
     transition: opacity 0.3s, transform 0.3s;
-  }
+}
 
-  .animated-button:hover {
+.animated-button:hover {
     transform: translateY(-5px);
-  }
+}
 
-  .animated-button:hover::before {
+.animated-button:hover::before {
     opacity: 1;
     transform: translateY(-100%);
-  }
-  /* Bar of moving contents */
-  .bar {
+}
+
+.bar {
     position: relative;
     width: 100%;
     height: 100px;
     background-color: #f8c2c2;
     overflow: hidden;
     margin-top: 50px;
-  }
+}
 
-  .moving-content {
+.moving-content {
     position: absolute;
     top: 0;
     left: 0;
@@ -114,9 +120,9 @@ nav {
     width: 100%;
     display: flex;
     animation: moveContent 10s linear infinite;
-  }
+}
 
-  .moving-content div {
+.moving-content div {
     flex: 1;
     height: 100%;
     background-color: #f8c2c2;
@@ -124,41 +130,60 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}
 
-  @keyframes moveContent {
+@keyframes moveContent {
     0% { transform: translateX(0); }
     100% { transform: translateX(-100%); }
-  }
+}
 
-  .work-body{
+.work-body {
     margin-top: 20px;
-    
-  }
-  #work{
+}
+
+#work {
     font-size: 50px;
     text-align: center;
-  }
-  .data-analytics{
+}
+
+.data-analytics {
     text-align: left;
     width: 600px;
     height: 400px;
-  }
+}
 
-  .box{
+.box {
     background-color: #ccc;
     height: 400px;
     width: 400px;
     padding: 5%;
+}
 
-  }
-
-  .work-title1{
+.work-title1 {
     margin: 10px;
     color: #ff5722;
     font-size: 40px;
-  }
-  .work-body2{
+}
+
+.work-body2 {
     font-family: 'Courier New', Courier, monospace;
     font-style: oblique;
-  }
+    font-size: 22px;
+}
+
+.work-img {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+.work-img::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(255, 102, 0);
+}
